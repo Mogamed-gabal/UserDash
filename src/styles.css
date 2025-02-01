@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+/* primeng licons **insted off FontAwsome */
+@import "primeicons/primeicons.css";
+/* normalaizing Pagees */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Fonts */
+@font-face {
+    font-family: Poppins;
+    src: url(./assets/fonts/Poppins/Poppins-Regular.ttf) format("truetype"),
+    
+}
+@font-face {
+    font-family: neosanaarabic;
+    src: url(./assets/fonts/neosansarab/Neo\ Sans\ Arabic\ Regular.ttf) format("truetype"),
+}
+/*GLOBAL vARIABLES*/
+:root
+{
+    --primary-bg: white;
+    --secondry-bg: #F4F5F7;
+    --main-fw:neosanaarabic;
+    --secondery-fw:Poppins;
+    --muted-text:#6B7280;
+    --main-text:#1C1C28;
+    --border-color:#0000001A
+}

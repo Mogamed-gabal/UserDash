@@ -1,0 +1,116 @@
+
+
+/* Remove borders from the table */
+::ng-deep .borderless-table .p-datatable-table {
+  border: none !important;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}
+
+/* Style the table header */
+::ng-deep .borderless-table .p-datatable-thead > tr > th {
+  border: none !important;
+  background-color: var(--secondry-bg) !important;
+  padding: 12px !important;
+  font-weight: bold !important;
+  border-top-left-radius: 4px;
+  font-family: var(--main-fw);
+  font-size: 13px;
+  color: var(--muted-text);
+}
+
+::ng-deep .borderless-table .p-datatable-thead > tr > th:first-child {
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+::ng-deep .borderless-table .p-datatable-thead > tr > th:last-child {
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+/* Style the table body */
+::ng-deep .borderless-table .p-datatable-tbody > tr > td {
+  font-family: var(--secondery-fw);
+  padding: 12px !important;
+  margin: 10px;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  margin-top: 5px !important;
+  font-size: 14px;
+}
+
+::ng-deep .borderless-table .p-datatable-tbody > tr > td:first-child {
+  font-family: var(--main-fw);
+  border-right: 1px solid var(--border-color) !important;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 12px !important;
+}
+
+::ng-deep .borderless-table .p-datatable-tbody > tr > td:last-child {
+  border-left: 1px solid var(--border-color) !important;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 12px !important;
+}
+
+/* Style the paginator */
+::ng-deep .borderless-table .p-paginator {
+  border: none !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start !important;
+  -ms-flex-pack: start !important;
+  justify-content: flex-start !important; 
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: var(--p-paginator-background);
+  color: var(--p-paginator-color);
+  padding: var(--p-paginator-padding);
+  border-radius: var(--p-paginator-border-radius);
+  gap: var(--p-paginator-gap);
+}
+
+::ng-deep .p-paginator-page.p-paginator-page-selected {
+  background-color: #3E97FF !important;
+  color: white !important;
+  border-radius: 4px !important;
+}
+
+::ng-deep .p-paginator-last,
+::ng-deep .p-paginator-first {
+  display: none !important;
+}
+
+::ng-deep .p-select {
+  display: none !important;
+}
+
+::ng-deep .custom-dropdown {
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+}
+
+/* Style the custom dropdown */
+.custom-dropdown {
+  margin: 0 10px;
+  width: 80px; 
+}
+
+.custom-text {
+  font-family: var(--main-fw);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: #333333;
+}

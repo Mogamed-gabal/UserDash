@@ -1,0 +1,57 @@
+<div class="taple-page w-100" style="background-color: white;">
+  <div class="container-fluid py-3">
+    <p-table
+      class="borderless-table"
+      [value]="bodyData"
+      [paginator]="true"
+      [rows]="rows"
+      [tableStyle]="{ 'min-width': '50rem' }"
+      [rowsPerPageOptions]="[]"
+    >
+      <ng-template #header>
+        <tr>
+          @for (item of headerData; track $index) {
+            <th style="width:25%">{{ item.tableUser }}</th>
+            <th style="width:15%">{{ item.FirstDate }}</th>
+            <th style="width:15%">{{ item.cancelingDay }}</th>
+            <th style="width:20%">{{ item.hr }}</th>
+            <th style="width:10%">{{ item.localMinutes }}</th>
+            <th style="width:10%">{{ item.glopalMinutes }}</th>
+            <th style="width:10%">{{ item.amount }}</th>
+          }
+        </tr>
+      </ng-template>
+
+      <ng-template #body let-tableData>
+        <tr>
+          <td pTooltip="الشركة الألمانية لابادة الحشرات" tooltipPosition="top" hideDelay="500">
+            <img [src]="companyImage" width="20%" class="flag" alt="AlordonImg">{{ tableData.name }}
+          </td>
+          <td>{{ tableData.startdate }}</td>
+          <td>{{ tableData.enddate }}</td>
+          <td>{{ tableData.manager }}</td>
+          <td>{{ tableData.globalMinutes }}</td>
+          <td>{{ tableData.localMinutes }}</td>
+          <td>{{ tableData.amount }}</td>
+        </tr>
+      </ng-template>
+
+      <!-- Move the paginator to the left -->
+      <ng-template pTemplate="paginatorleft">
+        <div class="pagination-controls">
+          <span class="custom-text">عرض</span>
+          <p-select
+            [options]="rowsOptions"
+            [(ngModel)]="rows"
+            (onChange)="onRowsChange($event)"
+            optionLabel="label"
+            optionValue="value"
+            placeholder="Select rows"
+            class="custom-dropdown"
+          ></p-select>
+          <span class="custom-text">من اصل {{ totalRecords }}</span>
+        </div>
+      </ng-template>
+    </p-table>
+  </div>
+</div>

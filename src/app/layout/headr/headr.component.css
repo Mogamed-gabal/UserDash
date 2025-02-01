@@ -1,0 +1,132 @@
+
+.page {
+  border-radius: 5px;
+  background-color: var(--primary-bg);
+}
+
+.head-right button {
+  font-family: var(--secondery-fw);
+  background-color: #48b299;
+  color: #ffffff;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.head-right button:hover {
+  background-color: #48b29993;
+}
+
+.head-right p {
+  color: var(--main-text);
+  font-family: var(--secondery-fw);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: right;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  margin-top: 16px;
+}
+
+/* Header Body */
+a {
+  text-decoration: none;
+  color: var(--muted-text);
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #3e97ff;
+}
+
+h2 {
+  font-family: var(--secondery-fw);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.74px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: var(--muted-text);
+}
+
+.col-md-3 p {
+  position: relative;
+  font-family:var(--secondery-fw);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.74px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: var(--main-text);
+}
+.row .col-md-3:nth-child(2) img
+,.row .col-md-3:nth-child(3) img
+{
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+}
+
+.flag {
+  border-radius: 50%;
+  padding: 3px;
+  margin-bottom: 11px;
+}
+
+.col-md-3::before,
+.col-md-3::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  background-color: #dfdfdf;
+}
+
+.col-md-3::before {
+  top: 146px;
+}
+
+.col-md-3::after {
+  top: 240px;
+}
+
+.col-md-3:nth-child(5)::after,
+.col-md-3:first-child::after,
+.col-md-3:nth-child(5)::before,
+.col-md-3:first-child::before {
+  display: none;
+}
+
+/* Responsive Styles */ 
+@media (max-width: 768px) {
+  .col-md-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%; 
+    max-width: 50%;
+  }
+  .head-right p {
+    font-size: 16px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .col-md-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%; 
+    max-width: 100%;
+  }
+
+  .head-right p {
+    font-size: 14px; 
+  }
+}

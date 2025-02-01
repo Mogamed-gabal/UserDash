@@ -1,0 +1,50 @@
+/* CSS Variables for consistency */
+:root {
+    --primary-bg: #ffffff; /* Example color */
+    --main-fw: Arial, sans-serif; /* Example font */
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: var(--primary-bg);
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+  
+  /* Heading styles */
+  h3 {
+    font-family: var(--main-fw);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  /* Span styles */
+  span {
+    background: #3E97FF1A;
+    border: 1px solid transparent; 
+    color: #3E97FF;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+  
+  /* Close button styles */
+  .close {
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #F4F4F4;
+    border-radius: 4px;
+    padding: 8px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .close:hover {
+    color: #FF4B55;
+  }
+    button, i {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }

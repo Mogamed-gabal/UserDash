@@ -1,0 +1,83 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* General Styles */
+.footer-page {
+   
+}
+
+h3 {
+  font-family: var(--main-fw);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.35px;
+  text-align: right;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: #6b7280;
+  margin: 0; 
+}
+
+p {
+  font-family: var(--main-fw);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.55px;
+  text-align: right;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: #1c1c28;
+  margin: 0; 
+}
+
+span {
+  width: 6px;
+  height: 6px;
+  background: #e8e8e8;
+  border-radius: 50%;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .right-footer,
+  .left-footer {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+      flex: 1 1 100%; 
+      -webkit-box-pack: center; 
+      -ms-flex-pack: center; 
+      justify-content: center;
+      text-align: center;
+  }
+
+  .right-footer img {
+    width: 20%; 
+  }
+
+  h3,
+  p {
+    text-align: center; 
+  }
+}
+
+@media (max-width: 576px) {
+  .right-footer img {
+    width: 25%; 
+  }
+
+  h3 {
+    font-size: 11px; 
+  }
+
+  p {
+    font-size: 12px; 
+  }
+}

@@ -1,0 +1,42 @@
+<div class="page w-100">
+    <!-- Header Top -->
+    <div class="container-fluid d-flex justify-content-between">
+      <div class="header-head d-flex justify-content-between align-items-center w-100">
+        <div class="head-right d-flex align-items-center">
+          <p class="px-2">{{ headertop.titleNumebr }}</p>
+          <button class="btn">{{ headertop.button }}</button>
+        </div>
+        <div class="head-left px-2">
+          <div class="dropdown">
+            <a class="pi pi-ellipsis-h" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><i class="pi pi-pencil"></i>{{ headertop.headerDropDwon.editbtn }}</a></li>
+              <li class="delet"><a class="dropdown-item" style="color:red;" href="#"><i class="pi pi-bell-slash"></i>{{ headertop.headerDropDwon.deletBtn }}</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Header Body -->
+    <div class="container-fluid pt-3">
+      <div class="row d-flex pb-3 gy-2 align-items-center">
+        @for (section of headerBody.data; track ($index)) {
+          <div class="col-md-3 col-sm-6 col-12">
+            <h2>{{ section.title }}</h2>
+            @if ($index == 2) {
+              <p [pTooltip]="tooltipText" tooltipPosition="top" hideDelay="500">
+                <img  class="flag" [src]="section.img" alt="">
+                {{ section.data }}
+              </p>
+            } @else {
+              <p>
+                <img  class="flag" [src]="section.img" alt="">
+                {{ section.data }}
+              </p>
+            }
+          </div>
+        }
+      </div>
+    </div>
+  </div>
