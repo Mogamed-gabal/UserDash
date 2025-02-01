@@ -86,7 +86,7 @@
 ::ng-deep .p-paginator-first {
   display: none !important;
 }
-
+/* remove built in selector */
 ::ng-deep .p-select {
   display: none !important;
 }
