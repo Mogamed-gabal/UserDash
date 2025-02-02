@@ -37,10 +37,10 @@ export class ContentService {
           headers:[{tableUser: "العميل",
           FirstDate: "تاريخ التعيين",
           cancelingDay: "تاريخ الغاء التعيين",
-          hr: "السينمات",
-          localMinutes: "عدد الأشخاص",
-          glopalMinutes: "عدد مرات الشراء",
-          amount: "التذكرة"}]
+          hr: "المسؤوول عن التعيين",
+          localMinutes: " الدقائق المحلية",
+          glopalMinutes: "  الدقائق الدولية",
+          amount: "المبلغ"}]
         },
         footer:{
           rLable:"تم الانشاء بواسطة",
