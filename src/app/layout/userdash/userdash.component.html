@@ -1,8 +1,20 @@
-<app-nav [navBoy]="navData" ></app-nav>
+<!-- Navigation Component -->
+<app-nav [navBoy]="navData"></app-nav>
+
+<!-- Main Content Container -->
 <div class="container-fluid bg-light py-3">
+  
+  <!-- Header Component -->
   <app-headr [Data]="HeaderData" [body]="HeaderBody"></app-headr>
-  <br />
+  
+  <br /> <!-- Spacing between components -->
+
+  <!-- Table Component -->
   <app-taple [head]="TableHeading" [body]="TableBody"></app-taple>
-  <br />
+  
+  <br /> <!-- Spacing between components -->
+
+  <!-- Footer Component -->
   <app-footer [content]="footerData"></app-footer>
+
 </div>

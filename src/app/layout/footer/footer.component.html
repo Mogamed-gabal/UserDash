@@ -1,29 +1,36 @@
+<!-- Footer Section -->
 <div class="footer-page w-100 bg-white rounded px-2 py-3">
-    <div class="container-fluid">
-      <footer class="w-100 d-flex justify-content-between flex-wrap">
-        <!-- Right Footer Section -->
-        <div class="right-footer d-flex align-items-center">
-          <img
-            src="../../../assets/imgs/Basic_Ui__28186_29_converted.webp"
-            class="rounded-5 pb-2"
-            width="15%"
-            alt="Footer Image" >
+  <div class="container-fluid">
+    <footer class="w-100 d-flex justify-content-between flex-wrap">
+      
+      <!-- Right Footer Section -->
+      <div class="right-footer d-flex align-items-center">
+        <!-- Footer Image -->
+        <img
+          src="../../../assets/imgs/Basic_Ui__28186_29_converted.webp"
+          class="rounded-5 pb-2"
+          width="15%"
+          alt="Footer Image"
+        />
         
-          <div class="data p-2">
-            <h3>{{ footerContent.rLable }}</h3>
-            <p>{{ footerContent.userName }}</p>
-          </div>
+        <!-- Footer Content (Right) -->
+        <div class="data p-2">
+          <h3>{{ footerContent.rLable }}</h3>
+          <p>{{ footerContent.userName }}</p>
         </div>
-  
-        <!-- Left Footer Section -->
-        <div class="left-footer d-flex align-items-center">
-          <div class="data px-2">
-            <h3>{{ footerContent.lLaple }}</h3>
-            <p>
-              {{ footerContent.date }} <span></span> {{ footerContent.time }}
-            </p>
-          </div>
+      </div>
+
+      <!-- Left Footer Section -->
+      <div class="left-footer d-flex align-items-center">
+        <!-- Footer Content (Left) -->
+        <div class="data px-2">
+          <h3>{{ footerContent.lLaple }}</h3>
+          <p>
+            {{ footerContent.date }} <span></span> {{ footerContent.time }}
+          </p>
         </div>
-      </footer>
-    </div>
+      </div>
+
+    </footer>
   </div>
+</div>

@@ -14,8 +14,6 @@ import { gsap } from 'gsap'; // Import GSAP
 export class HeadrComponent implements OnInit {
 @Input()Data:any
 @Input()body:any
-  companyImage:string='../../../assets/imgs/Logo.jpg'
-  countryImage:string='../../../assets/علم-الأردن-دلالته-وألوانه-وأكثر.jpg'
   headertop:any
   headerBody:any
   tooltipText='الشركة الالمانية لابادة الحشرات'

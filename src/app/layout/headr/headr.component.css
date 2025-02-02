@@ -5,8 +5,10 @@
 }
 
 .head-right button {
-  font-family: var(--secondery-fw);
+  font-family: var(--main-fw);
   background-color: #48b299;
+  font-size: 12px;
+  line-height: 14.4px;
   color: #ffffff;
   -webkit-transition: background-color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out;
@@ -44,7 +46,7 @@ a:hover {
 }
 
 h2 {
-  font-family: var(--secondery-fw);
+  font-family: var(--main-fw);
   font-size: 14px;
   font-weight: 400;
   line-height: 16.74px;
@@ -57,7 +59,7 @@ h2 {
 
 .col-md-3 p {
   position: relative;
-  font-family:var(--secondery-fw);
+  font-family:var(--main-fw);
   font-size: 14px;
   font-weight: 400;
   line-height: 16.74px;
