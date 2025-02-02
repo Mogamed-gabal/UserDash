@@ -27,10 +27,12 @@ import { FormsModule } from '@angular/forms';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TapleComponent implements OnInit {
+  // featching data from parent
   @Input() head: any; 
   @Input() body: any; 
 
   companyImage: string = '../../../assets/imgs/Logo_converted.webp';
+  // data containers
   bodyData: any[] = []; 
   headerData: any[] = []; 
 
@@ -49,7 +51,7 @@ export class TapleComponent implements OnInit {
 
   ngOnInit(): void {
     this.headerData = this.head; // Initialize header data
-    this.bodyData = this.body; 
+    this.bodyData = this.body; // Initialize body data
     this.totalRecords = this.bodyData.length; 
   }
 
