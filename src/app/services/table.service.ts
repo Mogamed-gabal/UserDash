@@ -21,7 +21,7 @@ export class TableService {
           },
           tableBody: {
             rows:[
-              {name:'الشركة الالمانية لابادة...',startdate:'01/12/2024',enddate:'01/12/2024',manager:'عبدالرحيم اسماعيل ناصف',localMinutes:'1240',globalMinutes:'124',amount:'61890ج.م'},
+              {name:'الشركة الالمانية لابادة...',startdate:'01/12/2024',enddate:'',manager:'عبدالرحيم اسماعيل ناصف',localMinutes:'1240',globalMinutes:'124',amount:'61890ج.م'},
               {name:'الشركة الالمانية لابادة...',startdate:'01/12/2024',enddate:'01/12/2024',manager:'عبدالرحيم اسماعيل ناصف',localMinutes:'1240',globalMinutes:'124',amount:'61890ج.م'},
               {name:'الشركة الالمانية لابادة...',startdate:'01/12/2024',enddate:'01/12/2024',manager:'عبدالرحيم اسماعيل ناصف',localMinutes:'1240',globalMinutes:'124',amount:'61890ج.م'},
               {name:'الشركة الالمانية لابادة...',startdate:'01/12/2024',enddate:'01/12/2024',manager:'عبدالرحيم اسماعيل ناصف',localMinutes:'1240',globalMinutes:'124',amount:'61890ج.م'},

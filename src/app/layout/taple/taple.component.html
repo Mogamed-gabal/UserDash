@@ -37,7 +37,12 @@
           </td>
           <!-- Table Data Columns -->
           <td>{{ tableData.startdate }}</td>
-          <td>{{ tableData.enddate }}</td>
+          @if(tableData.enddate!==""){
+            <td>{{ tableData.enddate }}</td>
+          }@else
+          {
+            <td>-</td>
+          }
           <td>{{ tableData.manager }}</td>
           <td>{{ tableData.globalMinutes }}</td>
           <td>{{ tableData.localMinutes }}</td>
