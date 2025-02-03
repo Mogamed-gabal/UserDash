@@ -8,13 +8,20 @@ import { Component, Input, OnInit, ChangeDetectionStrategy } from '@angular/core
   changeDetection: ChangeDetectionStrategy.OnPush, 
 })
 export class FooterComponent implements OnInit {
-  @Input() content: any;
-  footerContent: any; 
+  private _content: any;
 
-  constructor() {}
-
+  @Input() 
+  set content(value: any) {
+    this._content = value;
+    
+  }
+  get content(): any {
+    return this._content;
+  }
 
   ngOnInit(): void {
-    this.footerContent = this.content; 
+  
   }
+
+
 }

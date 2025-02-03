@@ -1,19 +1,31 @@
 <!-- Navigation Component -->
-<app-nav [navBoy]="navData"></app-nav>
+<app-nav [dir]="dir" [navBoy]="navData"></app-nav>
+<!-- <div>
+  <button class=" btn btn-primary" (click)="changeLanguage('ar')">Arabic</button>
+  <button class=" btn btn-secondary mx-2" (click)="changeLanguage('en')">English</button>
+</div> -->
+<p-speedDial
+  [model]="items"
+  direction="left"
+  [style]="{ left: '20px', top: '50%', transform: 'translateY(-50%)' }"
+  buttonClassName="p-button-outlined"
+  showIcon="pi pi-cog"
+  hideIcon="pi pi-times"
+></p-speedDial>
 <!-- Main Content Container -->
 <div class="container-fluid bg-light py-3">
   
   <!-- Header Component -->
-  <app-headr [Data]="HeaderData" [body]="HeaderBody"></app-headr>
+  <app-headr [dir]="dir"  [Data]="HeaderData" [Body]="HeaderBody"></app-headr>
   
   <br /> <!-- Spacing between components -->
 
   <!-- Table Component -->
-  <app-taple [head]="TableHeading" [body]="TableBody"></app-taple>
+  <app-taple  [head]="TableHeading" [body]="TableBody"></app-taple>
   
   <br /> <!-- Spacing between components -->
 
   <!-- Footer Component -->
-  <app-footer [content]="footerData"></app-footer>
+  <app-footer [dir]="dir" [content]="footerData"></app-footer>
 
 </div>

@@ -10,19 +10,31 @@ import { TooltipModule } from 'primeng/tooltip';
   styleUrl: './headr.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeadrComponent implements OnInit {
-@Input()Data:any
-@Input()body:any
+export class HeadrComponent implements OnInit  {
+  tooltipText='الشركة الالمانية لابادة الحشرات'
   headertop:any
   headerBody:any
-  tooltipText='الشركة الالمانية لابادة الحشرات'
-
-
-  ngOnInit(): void {
-    this.headertop=this.Data.headerTop
-    this.headerBody=this.body.headerBody
-    console.log(this.headerBody.data);
-    
-
+  @Input() 
+  set Data(value: any) {
+    this.headertop = value.headerTop;
+   
   }
+  get Data(): any {
+    return this.headertop;
+  }
+  @Input() 
+  set Body(value: any) {
+    this.headerBody = value.headerBody.data;
+   
+  }
+  get body(): any {
+    return this.headerBody;
+  }
+  
+
+
+  
+  ngOnInit(): void {
+  }
+
 }

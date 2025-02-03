@@ -39,6 +39,8 @@ export class ContentService {
         },
        
         table: {
+          paginatorCusStart:"عرض",
+          paginatorCusend:"من اصل",
           headers:[{tableUser: "العميل",
           FirstDate: "تاريخ التعيين",
           cancelingDay: "تاريخ الغاء التعيين",
@@ -61,46 +63,49 @@ export class ContentService {
         lang:"en",
         nav:{
           probirty:" Show Number"
-        },header:{
+        }, header:{
           headerTop: {
             titleNumebr: "012345678910",
-            button: " In Using",
+            button: "In Use",
             headerDropDwon:{
-              editbtn:" Edit Number",
-              deletBtn:" Delet Employment " 
+            editbtn:"Edit Number",
+            deletBtn:"Delete Assignment"
             },
           },
-          headerBody:{
-            dtat:[
-              { title:"Protocol Name ",data:" Vodafon Egypt"},
-              { title:"Country",data:"Hashemite Kingdom of Jordan"},
-              { title:"Current Client", data:"German Extermination Company..."},
-              { title:"Number of extensions",data:"9"},
-              { title:"Last shipment date",data:"2024/12/29"},
-              { title:"Current balance",data:"5000 EGP"},
-              { title:"Used balance for current customer",data:"5000 EGP"},
-              { title:"Used balance for the number as a whole",data:"5000 EGP"}
+            headerBody:{
+              data:[
+                {title:"Protocol Name",data:"Vodafone Egypt"},
+                { title:"Country",data:"Hashemite Kingdom of Jordan",img:"../../../assets/imgs/sauid_converted.webp"},
+                { title:"Current Customer",data:"German Extermination Company...",img:"../../../assets/imgs/3127f2f250e6d45cdfddb2dc49464549 (1).webp"},
+                { title:"Number of Extensions",data:"9"},
+                { title:"Date of Last Shipment",data:"2024/12/29"},
+                { title:"Current Balance",data:"5000 EGP"},
+                { title:"Customer's Used Balance current",data:"5000EGP"},
+                { title:"The credit used for the whole number",data:"5000EGP"}
   
-            ]
-           },
+              ]
+          },
         },
 
        
         table: {
-          tableUser: "Client",
-          FirstDate: "Appointment Date",
-          cancellingDay: "Appointment Cancellation Date",
-          hr: "Cinemas",
-          localMinutes: "Number of People",
-          glopalMinutes: "Number of Purchases",
-          amount: "Ticket",
-          },
+          paginatorCusStart:"Show",
+          paginatorCusend:"From",
+
+          headers:[{tableUser: "Client",
+            FirstDate: "Appointment Date",
+            cancellingDay: "Appointment Cancellation Date",
+            hr: "Appointer",
+            localMinutes: "Local Minutes",
+            glopalMinutes: "International Minutes",
+            amount: "Amount"}]
+        },
           footer:{
             rLable:"Created By",
             userName:"  Abd alrahim Esmail Nasf",
             lLaple:" Estaplished",
             date:"01/12/2024",
-            time:"04:30 م"
+            time:"04:30 Pm"
           }
       }
     }

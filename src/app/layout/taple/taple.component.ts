@@ -27,14 +27,31 @@ import { FormsModule } from '@angular/forms';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TapleComponent implements OnInit {
-  // featching data from parent
-  @Input() head: any; 
-  @Input() body: any; 
-
-  companyImage: string = '../../../assets/imgs/3127f2f250e6d45cdfddb2dc49464549 (1).webp';
-  // data containers
   bodyData: any[] = []; 
   headerData: any[] = []; 
+  custumPagi:any
+  @Input() 
+  set head(value: any) {
+    this.headerData = value.headers;
+    this.custumPagi=value
+    console.log(this.custumPagi)
+   
+  }
+  get head(): any {
+    return this.headerData;
+  }
+
+  @Input() 
+  set body(value: any) {
+    this.bodyData = value;
+   
+  }
+  get body(): any {
+    return this.bodyData;
+  }
+  companyImage: string = '../../../assets/imgs/3127f2f250e6d45cdfddb2dc49464549 (1).webp';
+  // data containers
+
 
   // Paginator settings
   first = 0;
@@ -50,11 +67,9 @@ export class TapleComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.headerData = this.head; // Initialize header data
-    this.bodyData = this.body; // Initialize body data
     this.totalRecords = this.bodyData.length; 
   }
-
+  
   // Handle rows per page change
   onRowsChange(event: any): void {
     this.rows = event.value; 

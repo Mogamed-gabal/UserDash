@@ -1,0 +1,18 @@
+/* Add this to your component's CSS file */
+:host ::ng-deep .p-speeddial {
+    position: fixed;
+    left: 0px !important;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+  }
+  
+  :host ::ng-deep .p-speeddial-button {
+    background-color: rgb(226, 222, 222); /* Primary color */
+    border-color: rgb(226, 222, 222);
+  }
+  
+  :host ::ng-deep .p-speeddial-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    border-color: #0056b3;
+  }
