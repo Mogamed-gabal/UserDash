@@ -1,7 +1,5 @@
-import { NavComponent } from './layout/nav/nav.component';
 import { Routes } from '@angular/router';
 import { UserdashComponent } from './layout/userdash/userdash.component';
-
 export const routes: Routes = [
   { path: '', redirectTo: 'userDash', pathMatch: 'full' },
   {

@@ -31,7 +31,7 @@ export class TapleComponent implements OnInit {
   @Input() head: any; 
   @Input() body: any; 
 
-  companyImage: string = '../../../assets/imgs/Logo_converted.webp';
+  companyImage: string = '../../../assets/imgs/3127f2f250e6d45cdfddb2dc49464549 (1).webp';
   // data containers
   bodyData: any[] = []; 
   headerData: any[] = []; 

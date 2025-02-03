@@ -35,7 +35,7 @@
 
   <!-- Header Body Section -->
   <div class="container-fluid pt-3">
-    <div class="row d-flex pb-3 gy-2 align-items-center">
+    <div class="row d-flex pb-3 gy-1 align-items-center">
       
       <!-- Loop Through Header Body Data -->
       @for (section of headerBody.data; track ($index)) {
@@ -45,12 +45,12 @@
           <!-- Conditional Tooltip for Specific Index -->
           @if ($index == 2) {
             <p [pTooltip]="tooltipText" tooltipPosition="top" hideDelay="500">
-              <img class="flag" [src]="section.img" alt="">
+              <img [src]="section.img" alt="">
               {{ section.data }}
             </p>
           } @else {
             <p>
-              <img class="flag" [src]="section.img" alt="">
+              <img  [src]="section.img" alt="">
               {{ section.data }}
             </p>
           }

@@ -1,8 +1,7 @@
-import { ChangeDetectionStrategy, Component, Input, input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { SpeedDialModule } from 'primeng/speeddial';
 import { TooltipModule } from 'primeng/tooltip';
-import { gsap } from 'gsap'; // Import GSAP
 
 @Component({
   selector: 'app-headr',
@@ -20,8 +19,8 @@ export class HeadrComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.headertop=this.Data
-    this.headerBody=this.body
+    this.headertop=this.Data.headerTop
+    this.headerBody=this.body.headerBody
     console.log(this.headerBody.data);
     
 
